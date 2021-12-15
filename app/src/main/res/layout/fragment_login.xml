@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".LoginActivity"
+        android:background="@mipmap/backgr"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.4"
+                android:background="@mipmap/hand"></ImageView>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="450dp"
+            android:layout_marginTop="150dp"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:elevation="1000dp"
+                app:cardCornerRadius="20dp">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="150dp"
+                    android:layout_marginRight="20dp"
+                    android:elevation="1000dp"
+                    app:cardCornerRadius="20dp"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/ic_outline_email_24"></ImageView>
+
+                    <EditText
+                        android:id="@+id/emailLogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="40dp"
+                        android:backgroundTint="@color/white"
+                        android:hint="info@gmail.com"
+                        android:inputType="textEmailAddress"
+                        android:textColorHint="@color/black"></EditText>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="250dp"
+                    android:layout_marginRight="20dp"
+                    android:elevation="1000dp"
+                    app:cardCornerRadius="20dp"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/ic_outline_lock_24"></ImageView>
+
+                    <EditText
+                        android:id="@+id/passLogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="40dp"
+                        android:backgroundTint="@color/white"
+                        android:hint="**************"
+                        android:inputType="textPassword"
+                        android:textColorHint="@color/black"></EditText>
+                </androidx.cardview.widget.CardView>
+
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="550dp"
+            android:backgroundTint="@color/white"
+            android:scaleType="fitXY"
+            android:scaleX="1"
+            android:scaleY="1"
+            android:src="@mipmap/arrow"
+            android:id="@+id/loginbtn"
+            app:backgroundTint="@android:color/transparent"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textStyle="bold"
+        android:textColor="#ffd100"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:layout_marginTop="80dp"></TextView>
+</FrameLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "710044694144",
+    "firebase_url": "https://appcon-193ea-default-rtdb.firebaseio.com",
+    "project_id": "appcon-193ea",
+    "storage_bucket": "appcon-193ea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:710044694144:android:c564b39930de4ffba89865",
+        "android_client_info": {
+          "package_name": "com.abdulaleem.appcon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "710044694144-gjqvibo00kekfs5q03m7v9fmjhdek1ff.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2bg_wFUTU1UG5Y2ul3JQnT8grsadfBNg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "710044694144-gjqvibo00kekfs5q03m7v9fmjhdek1ff.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

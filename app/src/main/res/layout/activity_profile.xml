@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:orientation="vertical"
+    >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:cardCornerRadius="40dp"
+                android:layout_marginTop="-30dp"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/backgr"></ImageView>
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/ic_baseline_arrow_back_ios_new_24"
+                    android:id="@+id/back_profile"></ImageView>
+
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_photo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="160dp"
+        app:civ_border_color="#1f1f1f"
+        app:civ_border_width="10dp"></de.hdodenhof.circleimageview.CircleImageView>
+</RelativeLayout>
+
+
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="50dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"></TextView>
+
+    <TextView
+        android:id="@+id/name_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="400dp"
+        android:text="name"
+
+        android:textSize="20dp"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="50dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"></TextView>
+
+    <TextView
+        android:id="@+id/email_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="450dp"
+        android:text="email"
+        android:textSize="20dp"></TextView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="320dp"
+        android:backgroundTint="#2baccd
+"
+        android:src="@drawable/ic_baseline_photo_camera_24">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="650dp"
+    android:layout_centerHorizontal="true"
+    android:text="Log Out"
+
+    android:id="@+id/logout"></Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Funds"
+        android:layout_marginTop="550dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/myFunds"></Button>
+</RelativeLayout>
+

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProgressActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:id="@+id/bar"
+
+        android:background="@mipmap/backgr">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="30dp"
+            android:layout_margin="5dp"
+            android:textColor="@color/white"
+            android:text="Add Progress"></TextView>
+    </RelativeLayout>
+
+    <ImageSwitcher
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/is"
+        android:background="@drawable/ic_baseline_photo_camera_24"
+        android:layout_marginTop="100dp"
+        android:scaleType="fitXY"
+
+        ></ImageSwitcher>
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="Previous"
+        android:layout_marginTop="350dp"
+        android:id="@+id/prev"></Button>
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="350dp"
+        android:id="@+id/next"></Button>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Upload"
+        android:id="@+id/upload"></Button>
+</RelativeLayout>
